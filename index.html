@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Login_SE_LAB</title>
+
+<style type="text/css">
+
+    .kos{
+    	padding-top: 10%;
+    }
+    html
+    {
+    	background: white;
+    	color: white;
+    }
+
+    form {
+        border: 1px solid #2E2E2E;
+        width: 50%;
+        font-family: verdana;
+        padding: 15px;
+    }
+
+    /* Full-width inputs */
+    input[type=text], input[type=password] {
+        width: 90%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    /* Set a style for all buttons */
+    .submit{
+        background-color: #2E2E2E;
+        border :1px solid #2E2E2E;
+        color: white;
+        border-radius: 30px;
+        padding: 14px 20px;
+        margin: 8px 0;
+        cursor: pointer;
+        width: 40%;
+    }
+
+
+    .submit2{
+    	background-color: #078469;
+        border :1px solid #078469;
+    	color: white;
+        border-radius: 30px;
+        padding: 14px 20px;
+        margin: 8px 0;
+        cursor: pointer;
+        width: 40%;
+        
+    }
+
+    /* Add a hover effect for buttons */
+    .submit:hover {
+    	color: #2E2E2E;
+    	background : white;
+    	border :1px solid #2E2E2E;
+        opacity: 0.8;
+    }
+    .submit2:hover {
+    	color: #078469;
+    	background : white;
+    	border :1px solid #078469;
+        opacity: 0.8;
+    }
+
+    /* Extra style for the cancel button (red) */
+
+    /* Center the avatar image inside this container */
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+    }
+    a{text-decoration: none;}
+    
+    .uname{color : #2E2E2E;float: left;}
+
+	.lome{float: left;padding-left: 30px;}
+
+	.uname3{color : #078469;padding: 10px;}
+
+	span{color:#078469;}
+
+	span:hover{color:white;}
+
+
+    /* The "Forgot password" text */
+    span.psw {
+        float: right;
+        padding-top: 16px;
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+        span.psw {
+            display: block;
+            float: none;
+        }
+        .cancelbtn {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+	<center>
+<div class="kos">		
+	<form>
+     <h3 style="font-family: keep calm;font-size: 45px;"><SPAN style="color:#2E2E2E;">VBIT</SPAN><SPAN class="chng"> BANK</SPAN></h3>
+
+  <div class="container">
+
+    <h4 style="color: black">Login</h4>
+    <label class="uname"><i class="material-icons" style="font-size:35px;padding-top: 10px;">account_circle</i></label>
+    <input type="text" placeholder="Enter Username" name="uname" autocomplete="off">
+<br>
+    <label class="uname"><i class="fa fa-lock" style="font-size:35px;padding-top: 10px;padding-left: 6px;"></i></label>
+    <input type="password" placeholder="Enter Password" name="psw">
+</div>
+<br>
+<div style="padding-top: 15px;">
+    <a href="main.html" class="submit" style="padding-left: 50px;padding-right: 50px;">Login</a>
+    <a href="reg.html" class="submit2">New Account</a><br><br><br>	
+
+
+
+<a href="javascript:void(0);" id="mpopupLink" style="color: #078469">Forgot password ?</a><br><br><br>
+
+<!-- mPopup box -->
+<div id="mpopupBox" class="mpopup">
+    <!-- mPopup content -->
+    <div class="mpopup-content">
+        <div class="mpopup-head">
+            <h2>An OTP has been sent to your registered mobile number.<span class="close">x</span></h2>
+        </div>
+        <form action="index.html">
+        <div class="mpopup-main">
+            <p>Enter OTP</p>
+            <input type="text" placeholder="One Time Password"name="otp" required>
+        </div>
+        <div class="mpopup-foot">
+            <p><button type="submit" class="submit">Verify</button></p>
+        </div>
+        </form>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+		
+	// get the mPopup
+	var mpopup = document.getElementById('mpopupBox');
+
+	// get the link that opens the mPopup
+	var mpLink = document.getElementById("mpopupLink");
+
+	// get the close action element
+	var close = document.getElementsByClassName("close")[0];
+
+	// open the mPopup once the link is clicked
+	mpLink.onclick = function() {
+	    mpopup.style.display = "block";
+	}
+
+	// close the mPopup once close element is clicked
+	close.onclick = function() {
+	    mpopup.style.display = "none";
+	}
+
+	// close the mPopup when user clicks outside of the box
+	window.onclick = function(event) {
+	    if (event.target == mpopup) {
+	        mpopup.style.display = "none";
+	    }
+	}
+
+</script>
+
+
+
+</div>
+</form>
+</center>
+</body>
+</html>
+
+<style type="text/css">
+	
+		/* mPopup box style */
+		.mpopup {
+	    display: none;
+	    position: fixed;
+	    z-index: 1;
+	    padding-top: 100px;
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    height: 100%;
+	    overflow: auto;
+	    background-color: rgb(0,0,0);
+	    background-color: rgba(0,0,0,0.4);
+	}
+	.mpopup-content {
+	    position: relative;
+	    background-color: #fefefe;
+	    margin: auto;
+	    padding: 0;
+	    width: 40%;
+	    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	    -webkit-animation-name: animatetop;
+	    -webkit-animation-duration: 0.4s;
+	    animation-name: animatetop;
+	    animation-duration: 0.4s
+	}
+	.mpopup-head {
+	    padding: 2px 16px;
+	    background-color: #078469;
+	    color: white;
+	    font-size: 10px;
+	}
+	.mpopup-main {padding: 2px 16px;color: #2E2E2E; }
+	.mpopup-foot {
+	    padding: 2px 16px;
+	    background-color: #078469;
+	    color: #ffffff;
+	}
+	/* add animation effects */
+	@-webkit-keyframes animatetop {
+	    from {top:-300px; opacity:0}
+	    to {top:0; opacity:1}
+	}
+	@keyframes animatetop {
+	    from {top:-300px; opacity:0}
+	    to {top:0; opacity:1}
+	}
+	/* close button style */
+.close {
+    color: #078469;
+    border-radius: 30px;
+    float: right;
+    background: white;
+    padding: 5px;
+    padding-top: 2px;
+}
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+</style>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+<style>
+  body{
+    font-family: verdana;
+  }
+  a{
+    margin: 0;
+    text-decoration: none;
+    color : white;
+  }
+  ul {
+      list-style-type: none;
+      height: 900px;
+      margin: 0;
+      padding: 0;
+      width: 300px;
+      background-color: #f1f1f1;
+      border-right: 3px solid black;
+  }
+
+  li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+  }
+
+  li a.active {
+      background-color: #2e2e2e;
+      color: white;
+  }
+
+  li a:hover:not(.active) {
+      background-color: #2e2e2e;
+      color: white;
+  }
+</style>
+<style type="text/css">
+  body{margin:0px;}
+  .head{margin: 0;background: #2e2e2e;height: 45px;border-bottom: 3px solid black;}
+  .image{margin: 0;background: red;height: 300px;}
+  .fas:hover{
+    color : #078469;
+  }
+</style>
+</head>
+<body>
+<div class="head">
+
+<div style="float: left;padding-left: 30px;padding-top: 12px;margin: 0px;"><a href="index.html">VBIT BANK</a></div>
+<div style="float: right;padding-right: 30px;padding-top: 12px; "><a href="index.html"><i class="fas fa-power-off" style='font-size:25px;'></i></a></div>
+
+</div>
+<div style="display: inline-flex;">
+<div>
+<ul>
+  <div class="image"><img src="Male.png"></div>
+  <li><a style="background: #078469;color: white; padding: 15px;"><i class='fab fa-asymmetrik' style='font-size:20px;color:white'></i> Mr. Jackson</a></li>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="profile.html">Profile</a></li>
+  <li><a href="abt_dev.html">About Developers</a></li>
+  
+  <div class="dropdown">
+   <li>  <a class="dropbtn">Services 
+      <i class="fa fa-caret-down"></i>
+    </a>
+    <div class="dropdown-content">
+      <a href="ftran.html">Fund Transfer</a>
+      <a href="rc_tran.html">Recent Transactions</a>
+      <a href="ck_rst.html">Request Chequebook</a>
+      <a href="#">My Passbook</a>
+    </div></li>
+  </div>
+
+</ul>
+</div>
+<div style="background: white;
+
+background: #ADA996;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+width: 1216px;">
+
+  <center>
+    <h1 style="font-size: 65px; color: #2E2E2E; padding-top: 300px;"><span style="color: #078469;">VBIT BANK </span>WELCOMES YOU!</h1>
+  </center>
+
+</div>
+</div>
+</body>
+</html>
+
+
+<style>
+
+
+  .dropdown {
+      float: left;
+      overflow: hidden;
+        width: 100%;
+  }
+
+  .dropdown .dropbtn {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+  }
+
+  .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: #2e2e2e;
+  }
+
+  .dropdown-content {
+      width: 300px;
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+
+  .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+  }
+
+
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+</style>
